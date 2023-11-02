@@ -6,26 +6,20 @@ public class Main {
     //constructor method
     /// a constructor is a method with no return type and has the same name as the class it's in.
     public Main() {
-        // strawberry: red, triangle, 200, yes, 20
+
+        System.out.println("----------------");
         Fruit strawberry;
-        strawberry = new Fruit();
-        strawberry.color = "red";
-        strawberry.shape = "triangle";
-        strawberry.nSeeds = 200;
-        strawberry.nBush = 20;
-        strawberry.isRipe = true;
-        strawberry.printInfo();
+        strawberry = new Fruit("red", "triangle", 20, true);
+        strawberry.printFruit();
 
+        System.out.println("----------------");
         Fruit apple;
-        apple = new Fruit();
-        apple.color = "green";
-        apple.shape = "circle";
-        apple.nSeeds = 4;
-        apple.nTree = 35;
-        apple.isRipe = true;
-        apple.printInfo();
+        apple = new Fruit("green ", "circle", 35, true);
+        apple.printFruit2();
 
-
-        // apple: green, circle, 4, yes, 35
+        System.out.println("----------------");
+        Fruit kiwi;
+        kiwi = new Fruit("brown and green", "oval", 9, false );
+        kiwi.printFruit3();
     }
 }
